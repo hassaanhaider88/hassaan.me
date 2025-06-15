@@ -68,19 +68,19 @@ const AboutMeSTN = () => {
   const handleMouseMove = (e) => {
     const circle = circleRef.current;
 
-    // Get dimensions and mouse position relative to the circle
+   
     const { left, top, width, height } = circle.getBoundingClientRect();
     const x = e.clientX - left - width / 2;
     const y = e.clientY - top - height / 2;
 
-    // Map mouse movement to rotation angles
-    const rotateX = -(y / height) * 30; // Tilt effect
-    const rotateY = (x / width) * 30;  // Rotate effect
+    
+    const rotateX = -(y / height) * 30;
+    const rotateY = (x / width) * 30; 
 
-    // Apply rotation
+   
     circle.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };
-//  19 4493354
+
   return (
     <div ref={containerRef} id="AboutSection"  onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}  className='block relative md2:flex justify-evenly pt-[10%] w-full min-h-screen open-sans'>
       <div id="container" className="flex justify-center md2:justify-end items-center md2:items-end mr-5 w-full md2:w-1/2 aboutMeImage">
@@ -89,7 +89,7 @@ const AboutMeSTN = () => {
        </div>
        <div className='flex justify-center items-center border-[#da4ec7] border-[2px] rounded-full w-[220px] xsm:w-[420px] h-[220px] xsm:h-[420px] overflow-hidden'>
        <div className='rounded-full w-[200px] xsm:w-[400px] h-[200px] xsm:h-[400px] overflow-hidden'>
-        <img src="../../AboutMeImg.png" className='z-10 w-full h-full rotate-3' alt="HMK Hassaan" width={'100%'} height={'100%'} />
+        <img src="../../AboutmeImage.png" className='z-10 w-full h-full rotate-3' alt="HMK Hassaan" width={'100%'} height={'100%'} />
        </div>
        </div>
       </div>
@@ -115,7 +115,6 @@ const AboutMeSTN = () => {
 export default AboutMeSTN
 
 
-// import React, { useRef } from "react";
 
 const RotatingCircle = ({circleRef}) => {
  

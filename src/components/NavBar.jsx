@@ -42,8 +42,8 @@ useGSAP(() => {
     tl.from(link, {
       opacity: 0,
       y: -20,
-      duration: 0.3,
-      delay: index * 0.1, 
+      duration: 0.1,
+      delay: index * 0.01, 
       ease: "power3.out",
     });
   });
@@ -64,6 +64,13 @@ useGSAP(() => {
     ease: "back.out(1.7)",
   });
 }, []);
+
+
+useEffect(() => {
+  if(Projectpage){
+    NavBar.current.classList.add('hidden');
+  }
+}, [])
 
 
    useEffect(() => {
@@ -103,7 +110,7 @@ useGSAP(() => {
 
   return (
    <>
-   {/* laptop and Desktop Navbar  */}
+  
    <div ref={NavBar} className='top-10 left-1/2 z-40 fixed flex justify-between items-center bg-[#ffffffaf] dark:bg-[#000000ab] shadow-[#666363dc] shadow-md dark:shadow-[#dfdbdb] px-5 py-3 rounded-3xl w-[95%] text-black dark:text-white -translate-x-1/2 cursor-pointer overflow-hidden Inter_Font tInter_Fon'>
       {/* Left side bar Contianer */}
       <div className='relative flex justify-between items-center md:gap-5 md2:gap-12 px-2 w-[50%]'>

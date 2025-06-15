@@ -1,8 +1,9 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 const Footer = () => {
   var NarLink = [
-    { name : 'Home'  },
+    { name : 'Home' },
     { name : "Projects"},
     { name : "Blogs" },
     { name :  "Contact" }
@@ -17,11 +18,11 @@ const Footer = () => {
       </div>
       <div className='flex gap-5'>
       {NarLink.map((nlink,index)=>  {
-             return <h1 className={`h-full cursor-pointer duration-300 hover:underline`} key={index}>{nlink.name}</h1>
+             return <HashLink to={`#${nlink.name.toLocaleLowerCase()}`} smooth className={`h-full cursor-pointer duration-300 hover:underline`} key={index}>{nlink.name}</HashLink>
            })}
       </div>
     </div>
-    <div className='right-10 absolute flex justify-between items-center gap-2 mt-1 w-fit text-[#a8a5a5] text-[11px] cursor-pointer cursor-pointer'>
+    <div className='right-10 absolute flex justify-between items-center gap-2 mt-1 w-fit text-[#000000] text-[11px] cursor-pointer '>
       <p>&#169;Hassaan Haider.All rights reserved</p>
       <p className='hover:underline'>Terms of Use</p>
       <p className='hover:underline'>Privacy Policy</p>

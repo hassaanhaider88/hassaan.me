@@ -1,13 +1,18 @@
 import React from 'react'
 import { HiOutlineExternalLink } from "react-icons/hi";
-const SingleProject = ({ImgData,id}) => {
+const SingleProject = ({ImgData,id,handleImgViewerShown}) => {
     const handleLinkClick =(link)=>{
         window.open(link)
     }
-    console.log(ImgData);
+
+// const handleImgViewer =()=>{
+//     setIsImgViewerShown(true)
+//     console.log(ImgData.ProjectImgURl)
+// }
   return (
+   <>
     <div id={id} className={`xsm:flex block m-0 p-3 gap-5 justify-evenly ${ImgData.FlexDirecton} shadow-2xl rounded-xl `}>
-        <div className='rounded-xl w-full xsm:w-1/2 h-[45vh] overflow-x-hidden overflow-y-scroll OuterProjectImgContainer'>
+        <div onClick={()=>handleImgViewerShown(ImgData?.ProjectImgURl)} className='rounded-xl w-full xsm:w-1/2 h-[45vh] overflow-hidden OuterProjectImgContainer'>
      <img className="w-full duration-200 cursor-[url('../../AboutMeImg.png')] overflow-hidden"  src={ImgData.ProjectImgURl}  alt="" />
         </div>
     <div className='relative flex flex-col justify-center items-center w-full xsm:w-1/2 text-center'>
@@ -19,6 +24,7 @@ const SingleProject = ({ImgData,id}) => {
         </div>
     </div>
     </div>
+   </>
   )
 }
 

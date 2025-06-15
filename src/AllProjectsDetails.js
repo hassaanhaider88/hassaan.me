@@ -1,25 +1,25 @@
 const AllProjectsData = [
-    {
-      id: "one",
-      ProjectImgURl: "../PinsInterest.jpeg",
+  {
+    id: "one",
+    ProjectImgURl: "../PersonaAEye.png",
+    ProjectImgName: "PersonaAEye AI Project",
+    ProjectDesc: "Developed using ReactJS, Zustand and  Tailwind CSS. Fully responsive design.",
+    ProjectImgCreatedAt: "13 JUN 2025",
+    ProjectUrlRedirectTo: "https://personaaeye.netlify.app/",
+    IconsDirection: "bottom-5 left-5",
+    FlexDirecton: "flex-row-reverse",
+    XVal: "200px"
+  },
+  {
+      id: "two",
+      ProjectImgURl: "../PinsYourInterest.png",
       ProjectImgName: "Pinterest Clone",
       ProjectDesc: "Developed using Node.js, Express.js, MongoDB, EJS, and Tailwind CSS. Fully responsive design.",
       ProjectImgCreatedAt: "10 JAN 2024",
       ProjectUrlRedirectTo: "https://pins-your-interest-7yp2469ms-hassaan-haiders-projects.vercel.app/",
-      IconsDirection: "bottom-5 left-5",
-      FlexDirecton: "flex-row-reverse",
-      XVal: "200px"
-    },
-    {
-      id: "two",
-      ProjectImgURl: "../E_CommerceWeb.png",
-      ProjectImgName: "E-Commerce Store",
-      ProjectDesc: "Built with React.js, Tailwind CSS, JSX, and Context API. Fully responsive.",
-      ProjectImgCreatedAt: "20 DEC 2023",
-      ProjectUrlRedirectTo: "https://hmk-shop-by-hassaan-haider.netlify.app/",
       IconsDirection: "bottom-5 right-5",
       FlexDirecton: "flex-row",
-      XVal: "-200%"
+      XVal: "-200px"
     },
     {
       id: "three",
@@ -97,6 +97,17 @@ const AllProjectsData = [
       IconsDirection: "bottom-5 left-5",
       FlexDirecton: "flex-row-reverse",
       XVal: "50%"
+    },
+    {
+      id: "Ten",
+      ProjectImgURl: "../E_CommerceWeb.png",
+      ProjectImgName: "E-Commerce Store",
+      ProjectDesc: "Built with React.js, Tailwind CSS, JSX, and Context API. Fully responsive.",
+      ProjectImgCreatedAt: "20 DEC 2023",
+      ProjectUrlRedirectTo: "https://hmk-shop-by-hassaan-haider.netlify.app/",
+      IconsDirection: "bottom-5 right-5",
+      FlexDirecton: "flex-row",
+      XVal: "-200%"
     }
   ];
   

@@ -35,7 +35,7 @@ const HeroRightImage = () => {
      <div onClick={()=>setIsCVDownloaderOpen(!IsCVDownloaderOpen)} className='top-5 right-5 z-[90] absolute text-5xl cursor-pointer'><IoIosCloseCircleOutline/></div>
      <div onClick={handleCVDownloader} className='right-5 bottom-5 z-[90] duration-500 hover:scale-95 fixed text-5xl cursor-pointer'><FaDownload/></div>
      <div className='w-full min-h-screen cursor-zoom-in'>
-    <img src="../../MyCV.jpeg" width={"100%"} height={'85%'} alt="" />
+    <img src="../../MYResume.png" width={"100%"} height={'85%'} alt="" />
      </div>
      </div>
 

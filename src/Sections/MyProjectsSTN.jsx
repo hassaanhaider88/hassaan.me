@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React,{useRef, useState} from 'react'
 import SingleProject from '../components/SingleProject'
 import { GrFormNextLink } from "react-icons/gr";
 import AllProjectsData from '../AllProjectsDetails';
@@ -9,7 +9,9 @@ import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 const MyProjectsSTN = () => {
-  
+    const [IsImgViewerShown, setIsImgViewerShown] = useState(false)
+  const [ModelViewImgUri, setModelViewImgUri] = useState('')
+
   const containerRef = useRef(null); // Ref for the container div
   useGSAP(()=>{
     gsap.from("#ProjectSectionHeading",{
@@ -41,14 +43,18 @@ const MyProjectsSTN = () => {
     });
 
   },[])
-  //  console.log(AllProjectsData); 
+ const handleImgViewerShown = (ImgUri) =>{
+  setIsImgViewerShown(true)
+   setModelViewImgUri(ImgUri)
+} 
   return (
+    <>
     <div id='ProjectSection' className='flex flex-col items-center px-5 min-w-[100vw] min-h-screen text-black dark:text-white'>
            <h1 id='ProjectSectionHeading' className='py-4 w-fit text-6xl text-center text-nowrap overflow-hidden'>My projects</h1>
       <div className="flex flex-col gap-12 mt-10 w-[90vw] min-h-screen AllProjectsContainer">
         {
         AllProjectsData.slice(0,4).map((ImgData,idx)=>{
-           return <SingleProject key={idx} id={ImgData.id} ImgData={ImgData}/>
+           return <SingleProject key={idx} id={ImgData.id} handleImgViewerShown={handleImgViewerShown} ImgData={ImgData}/>
         })
         }
       </div>
@@ -56,6 +62,12 @@ const MyProjectsSTN = () => {
       <Link to={'/projects'} > Want to See More <GrFormNextLink className='inline'/></Link>
         </h1>
     </div>
+    {IsImgViewerShown && <div onClick={(e)=>setIsImgViewerShown(false)} className="handleImgViewerDiv fixed top-0 z-50 overflow-hidden py-10 bg-[#333]  h-screen w-full px-5 md:px-10 flex justify-center items-center">
+  <div onClick={(e) => e.stopPropagation()}  className='h-full rounded-t-[30px] w-full overflow-y-auto overflow-x-hidden '>
+      <img src={`../${ModelViewImgUri}`} alt={ModelViewImgUri} className='w-full bg-cover' />
+</div>
+  </div>}
+    </>
   )
 }
 
