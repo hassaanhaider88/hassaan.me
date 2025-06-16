@@ -108,6 +108,17 @@ const AllProjectsData = [
       IconsDirection: "bottom-5 right-5",
       FlexDirecton: "flex-row",
       XVal: "-200%"
+    },
+      {
+      id: "Eleven",
+      ProjectImgURl: "../DotGridDev.png",
+      ProjectImgName: "Dot Grid Dev",
+      ProjectDesc: "Created In Vanilla Js To Help Out Creation Of CSS Clip Path Shapes With ease",
+      ProjectImgCreatedAt: "16 JUNE 2025",
+      ProjectUrlRedirectTo: "https://dot-grid-dev.netlify.app/",
+     IconsDirection: "bottom-5 left-5",
+      FlexDirecton: "flex-row-reverse",
+      XVal: "200%"
     }
   ];
   
