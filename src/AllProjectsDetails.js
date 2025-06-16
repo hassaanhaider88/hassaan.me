@@ -118,7 +118,7 @@ const AllProjectsData = [
       ProjectUrlRedirectTo: "https://dot-grid-dev.netlify.app/",
      IconsDirection: "bottom-5 left-5",
       FlexDirecton: "flex-row-reverse",
-      XVal: "200%"
+      XVal: "50%"
     }
   ];
   
