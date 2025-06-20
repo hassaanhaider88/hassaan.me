@@ -119,7 +119,18 @@ const AllProjectsData = [
      IconsDirection: "bottom-5 left-5",
       FlexDirecton: "flex-row-reverse",
       XVal: "50%"
-    }
+    },
+    {
+      id: "Towelve",
+      ProjectImgURl: "../FoodEat.png",
+      ProjectImgName: "FoodEat Resturant Web",
+      ProjectDesc: "Built with HTML and  Tailwind CSS. Fully responsive.",
+      ProjectImgCreatedAt: "20 JUNE 2025",
+      ProjectUrlRedirectTo: "https://foodeat-by-hmk.netlify.app/",
+      IconsDirection: "bottom-5 right-5",
+      FlexDirecton: "flex-row",
+      XVal: "-200%"
+    },
   ];
   
   export default AllProjectsData;
