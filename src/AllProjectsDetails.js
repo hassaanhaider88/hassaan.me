@@ -129,7 +129,29 @@ const AllProjectsData = [
       ProjectUrlRedirectTo: "https://foodeat-by-hmk.netlify.app/",
       IconsDirection: "bottom-5 right-5",
       FlexDirecton: "flex-row",
-      XVal: "-200%"
+      XVal: "-150%"
+    },
+    {
+      id: "Therteen",
+      ProjectImgURl: "../Vs-CodeWeb.png",
+      ProjectImgName: "Vs CodeWeb Editor",
+      ProjectDesc: "Created In React And Monaco To Make VS Code Alternative Web Based Live Editor",
+      ProjectImgCreatedAt: "23 JUNE 2025",
+      ProjectUrlRedirectTo: "",
+     IconsDirection: "bottom-5 left-5",
+      FlexDirecton: "flex-row-reverse",
+      XVal: "50%"
+    },
+    {
+      id: "Fourteen",
+      ProjectImgURl: "../Color-Picker.png",
+      ProjectImgName: "Choose Thousand of Colors for Free",
+      ProjectDesc: "Built with HTML and  Tailwind CSS. Fully responsive.",
+      ProjectImgCreatedAt: "20 JUNE 2024",
+      ProjectUrlRedirectTo: "https://vscodeweb1.netlify.app/",
+      IconsDirection: "bottom-5 right-5",
+      FlexDirecton: "flex-row",
+      XVal: "-150%"
     },
   ];
   
