@@ -151,7 +151,7 @@ const AllProjectsData = [
       ProjectUrlRedirectTo: "https://vscodeweb1.netlify.app/",
       IconsDirection: "bottom-5 right-5",
       FlexDirecton: "flex-row",
-      XVal: "-150%"
+      XVal: "-100%"
     },
   ];
   
