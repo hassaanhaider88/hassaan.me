@@ -14,7 +14,7 @@ const Footer = () => {
     <div className='relative'>
     <div className='flex xsm:flex-row flex-col justify-between items-center px-3 xsm:px-10 w-full font-semibold text-black dark:text-white'>
         <div className='w-fit h-fit text-4xl LogoUserName'>
-        <h1 className='relative font-semibold duration-300' >Hassaan<span className='text-[#d217b7]'>.</span></h1>
+        <h1 className='relative font-semibold duration-300' >Hassaan<span className='text-[#d217b7] ml-2'>.</span>Dev</h1>
       </div>
       <div className='flex gap-5'>
       {NarLink.map((nlink,index)=>  {

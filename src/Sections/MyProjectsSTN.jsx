@@ -49,7 +49,7 @@ const MyProjectsSTN = () => {
 } 
   return (
     <>
-    <div id='ProjectSection' className='flex flex-col items-center px-5 min-w-[100vw] min-h-screen text-black dark:text-white'>
+    <div id='ProjectSection' className='flex flex-col items-center px-5 w-full min-h-screen text-black dark:text-white'>
            <h1 id='ProjectSectionHeading' className='py-4 w-fit text-6xl text-center text-nowrap overflow-hidden'>My projects</h1>
       <div className="flex flex-col gap-12 mt-10 w-[90vw] min-h-screen AllProjectsContainer">
         {

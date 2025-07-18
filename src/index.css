@@ -32,7 +32,7 @@ html {
 
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     user-select: none;
     box-sizing: border-box;
 }
@@ -204,4 +204,11 @@ body{
   
   .lenis.lenis-smooth iframe {
     pointer-events: none;
+  }
+
+  h1{
+    width: fit-content;
+  }
+  p{
+    width: fit-content;
   }
