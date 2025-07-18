@@ -6,7 +6,7 @@ const AllProjectsData = [
     ProjectDesc:
       "Built for speed, efficiency, and ease of use. GetSrc eliminates the complexity of media hosting so you can focus on what matters most—building amazing products.",
     ProjectImgCreatedAt: "20 JUNE 2025",
-    ProjectUrlRedirectTo: "",
+    ProjectUrlRedirectTo: "https://www.geturi.online",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row",
     XVal: "-200%",
