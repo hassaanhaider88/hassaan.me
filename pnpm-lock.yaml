@@ -11,6 +11,9 @@ importers:
       '@gsap/react':
         specifier: ^2.1.1
         version: 2.1.2(gsap@3.13.0)(react@18.3.1)
+      '@hmk_codeweb88/useglobalstate':
+        specifier: ^1.0.3
+        version: 1.0.3(react@18.3.1)
       gsap:
         specifier: ^3.12.5
         version: 3.13.0
@@ -347,6 +350,11 @@ packages:
     peerDependencies:
       gsap: ^3.12.5
       react: '>=17'
+
+  '@hmk_codeweb88/useglobalstate@1.0.3':
+    resolution: {integrity: sha512-2o5JPtotw72UhaqahPkxDY392dr0whraPqx2bXTEbJWPV2zT2T3TH3/3DDxFmmNzg5bYgEcqVZ7Q6+QqxMHDKg==}
+    peerDependencies:
+      react: '>=17.0.0'
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2003,6 +2011,10 @@ snapshots:
   '@gsap/react@2.1.2(gsap@3.13.0)(react@18.3.1)':
     dependencies:
       gsap: 3.13.0
+      react: 18.3.1
+
+  '@hmk_codeweb88/useglobalstate@1.0.3(react@18.3.1)':
+    dependencies:
       react: 18.3.1
 
   '@humanfs/core@0.19.1': {}
