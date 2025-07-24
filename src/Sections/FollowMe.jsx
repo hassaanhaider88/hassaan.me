@@ -86,7 +86,7 @@ const FollowMe = () => {
  ]
 
   return (
-    <div className="flex sm:flex-row flex-col justify-center sm:justify-between items-center gap-5 px-10 py-3 w-full text-black dark:text-white">
+    <div className="flex overflow-x-hidden sm:flex-row flex-col justify-center sm:justify-between items-center gap-5 px-10 py-3 w-full text-black dark:text-white">
       <div className="flex flex-col items-center gap-3">
         <h1 className="py-3 font-semibold text-3xl text-nowrap xsm:text-7xl overflow-hidden FollowHeading">
           Follow me

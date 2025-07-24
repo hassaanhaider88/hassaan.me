@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
 <>
-    <section id="home" className='relative w-full h-[200vh] md2:h-[100vh] HeroSectionDiv Inter_Font'>
+    <section id="home" className='relative overflow-x-hidden w-[100vw] h-[200vh] md2:h-[100vh] HeroSectionDiv Inter_Font'>
        <NavBar  Projectpage={false} />
        <LeftSlashes/>
        <RightIcons/>

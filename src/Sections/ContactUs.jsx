@@ -17,7 +17,7 @@ const ContactUs = () => {
   }
  }
   return (
-    <div id='contact' className='relative flex flex-col items-center w-full text-black dark:text-white'>
+    <div id='contact' className='relative overflow-x-hidden flex flex-col items-center w-full text-black dark:text-white'>
        <h1 id='ContectSectionHeading' className='py-2 w-fit h-fit font-semibold text-3xl text-center text-nowrap xsm:text-6xl overflow-hidden'>Contact me</h1>
        <div className="py-4 w-[250px] xsm:w-[400px] FormContainer">
         <form onSubmit={handleContactForm} >

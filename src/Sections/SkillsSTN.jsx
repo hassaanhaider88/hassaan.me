@@ -114,7 +114,7 @@ const SkillsSTN = () => {
     }, []);
 
   return (
-    <div ref={containerRef} id='SkillSection' className='w-full min-h-screen text-black dark:text-white'>
+    <div ref={containerRef} id='SkillSection' className='w-[100vw] overflow-x-hidden min-h-screen text-black dark:text-white'>
         <div className='flex justify-evenly items-center'>
             <div className="font-semibold text-nowrap text-xl xsm:text-3xl md2:text-6xl md:text-4xl Text">My Skills</div>
             <div className="ArrowIcon">

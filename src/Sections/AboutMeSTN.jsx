@@ -142,7 +142,7 @@ export default AboutMeSTN;
 
 const RotatingCircle = ({ circleRef }) => {
   return (
-    <div className="flex bg-transparent justify-center items-center">
+    <div className="flex overflow-x-hidden bg-transparent justify-center items-center">
       <div
         ref={circleRef}
         className="relative shadow-2xl rounded-full w-[200px] h-[200px]"

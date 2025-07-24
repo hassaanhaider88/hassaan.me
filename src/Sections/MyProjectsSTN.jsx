@@ -49,7 +49,7 @@ const MyProjectsSTN = () => {
 } 
   return (
     <>
-    <div id='ProjectSection' className='flex flex-col items-center px-5 w-full min-h-screen text-black dark:text-white'>
+    <div id='ProjectSection' className='flex overflow-x-hidden flex-col items-center px-5 w-[100vw] min-h-screen text-black dark:text-white'>
            <h1 id='ProjectSectionHeading' className='py-4 w-fit text-6xl text-center text-nowrap overflow-hidden'>My projects</h1>
       <div className="flex flex-col gap-12 mt-10 w-[90vw] min-h-screen AllProjectsContainer">
         {
@@ -62,7 +62,7 @@ const MyProjectsSTN = () => {
       <Link to={'/projects'} > Want to See More <GrFormNextLink className='inline'/></Link>
         </h1>
     </div>
-    {IsImgViewerShown && <div onClick={(e)=>setIsImgViewerShown(false)} className="handleImgViewerDiv fixed top-0 z-50 overflow-hidden py-10 bg-[#333]  h-screen w-full px-5 md:px-10 flex justify-center items-center">
+    {IsImgViewerShown && <div onClick={(e)=>setIsImgViewerShown(false)} className="handleImgViewerDiv fixed top-0 z-50 overflow-hidden py-10 bg-[#333]  h-screen w-[100vw] px-5 md:px-10 flex justify-center items-center">
   <div onClick={(e) => e.stopPropagation()}  className='h-full rounded-t-[30px] w-full overflow-y-auto overflow-x-hidden '>
       <img src={`../${ModelViewImgUri}`} alt={ModelViewImgUri} className='w-full bg-cover' />
 </div>
