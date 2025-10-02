@@ -102,7 +102,7 @@ const NavBar = ({ Projectpage }) => {
   };
 
   const handleWhatsAppUrl = () => {
-    window.open("https://wa.me/923305819108");
+    window.open("https://wa.me/923437117831");
   };
 
   return (

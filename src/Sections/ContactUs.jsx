@@ -6,18 +6,23 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const ContactUs = () => {
   const [UName, setUName] = useState('')
   const [UEmail, setUEmail] = useState('')
-  const [UMsg, setUMsg] = useState('')
+  const [UMsg, setUMsg] = useState('');
+  const [IsShownContact, setIsShownContact] = useState(true);
+  
 
-  const handleContactForm = (e) =>{
+  const handleContactForm = async (e) =>{
    e.preventDefault();
-  if(UName && UEmail && UMsg){
-   window.location.href = `mailto:${UEmail}?subject=${UMsg}`;
+  var res = await fetch(`https://getsrc-be.onrender.com/api/save-email?email=${UEmail}`);
+  res = await res.json();
+  if(!res){
+    alert('Somthing Went Wrong..')
   }else{
-    alert('Please Fill All Fields')
+    alert('Thanks For Your Contacting...');
+    setIsShownContact(false)
   }
  }
   return (
-    <div id='contact' className='relative overflow-x-hidden flex flex-col items-center w-full text-black dark:text-white'>
+    <div id='contact' className={` ${IsShownContact ? "flex" : "hidden"} relative overflow-x-hidden flex flex-col items-center w-full text-black dark:text-white`}>
        <h1 id='ContectSectionHeading' className='py-2 w-fit h-fit font-semibold text-3xl text-center text-nowrap xsm:text-6xl overflow-hidden'>Contact me</h1>
        <div className="py-4 w-[250px] xsm:w-[400px] FormContainer">
         <form onSubmit={handleContactForm} >
