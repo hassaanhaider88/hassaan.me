@@ -4,7 +4,7 @@ const AllProjectsData = [
     ProjectImgURl: "../GetURI.png",
     ProjectImgName: "Get URI",
     ProjectDesc:
-      "Built for speed, efficiency, and ease of use. GetSrc eliminates the complexity of media hosting so you can focus on what matters most—building amazing products.",
+      "Built for speed, efficiency, and ease of use. GetURI eliminates the complexity of media hosting so you can focus on what matters most—building amazing products.",
     ProjectImgCreatedAt: "20 JUNE 2025",
     ProjectUrlRedirectTo: "https://www.geturi.online",
     IconsDirection: "bottom-5 right-5",
@@ -42,7 +42,7 @@ const AllProjectsData = [
     ProjectDesc:
       "Implemented with  React.js and Tailwind CSS. Fully responsive. Open Source Project to help bigginner's to contribute this project easily",
     ProjectImgCreatedAt: "11 AUG 2025",
-    ProjectUrlRedirectTo: "https://hmk-codeweb.netlify.app",
+    ProjectUrlRedirectTo: "https://buttonjs.vercel.app",
     IconsDirection: "bottom-5 left-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "50%",
