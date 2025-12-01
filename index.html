@@ -91,6 +91,7 @@
         ua: navigator.userAgent,
         platform: navigator.platform,
         language: navigator.language,
+        country_name: getGeoInfo(),
         screen: { width: screen.width, height: screen.height }
       }
     };
@@ -110,6 +111,20 @@
   }
 
 })();
+
+async function getGeoInfo() {
+  try {
+    const res = await fetch("https://ipapi.co/json");
+    const data =  res.json();
+    return data.country_name
+  } catch (err) {
+    console.error("Geo error", err);
+    return null;
+  }
+}
+
+
+
 </script>
 
   </body>
