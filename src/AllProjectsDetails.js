@@ -49,23 +49,24 @@ const AllProjectsData = [
   },
   {
     id: "projectNumber05",
-    ProjectImgURl: "../ConstrutorWebsite.png",
-    ProjectImgName: "Construction Website",
-    ProjectDesc: "Built using HTML5, CSS3, and JavaScript. Fully responsive.",
-    ProjectImgCreatedAt: "2 OCT 2023",
-    ProjectUrlRedirectTo: "https://hmk-consutructionsdemo.netlify.app/",
+    ProjectImgURl: "../Gulzar-Sons-Furniture.png",
+    ProjectImgName: "Furniture Website Live",
+    ProjectDesc:
+      "Code in Vanilla js and Write Complete BackEnd In Nodejs and mongoose",
+    ProjectImgCreatedAt: "2 JUNE 2025",
+    ProjectUrlRedirectTo: "http://gulzarsonsfurniture.com",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "200%",
   },
   {
     id: "projectNumber06",
-    ProjectImgURl: "../ColorPicker.jpeg",
-    ProjectImgName: "Color Picker Tool",
+    ProjectImgURl: "../DevTRACE.png",
+    ProjectImgName: "Live Website Tracking In MERN",
     ProjectDesc:
-      "Developed with HTML5, CSS3, and JavaScript. Fully responsive.",
-    ProjectImgCreatedAt: "2 MAR 2024",
-    ProjectUrlRedirectTo: "https://colors-hmk-codeweb.netlify.app/",
+      "Developed In MERN Stack To Track Live Visitors On Your Website With Details Like Location, Device, TimeSpent And More",
+    ProjectImgCreatedAt: "15 NOV 2025",
+    ProjectUrlRedirectTo: "https://devtrace-hmkcodeweb.netlify.app",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row",
     XVal: "-200%",
@@ -175,7 +176,7 @@ const AllProjectsData = [
     FlexDirecton: "flex-row-reverse",
     XVal: "50%",
   },
-    {
+  {
     id: "projectNumber16",
     ProjectImgURl: "../CurrentPortfolio.jpeg",
     ProjectImgName: "Portfolio V3",

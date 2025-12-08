@@ -2,9 +2,12 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./HMKCodeWebIcon.png" />
+    <link rel="icon" type="image/svg+xml" href="./HMKCodeWebLogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta name="DevTrace-Varify-HMK-CodeWeb" content="0b135f643f9566489a6ab1bca6e9122fc705fcb2" />
+    <meta
+      name="DevTrace-Varify-HMK-CodeWeb"
+      content="0b135f643f9566489a6ab1bca6e9122fc705fcb2"
+    />
     <title>Hassaan Haider || HMK CodeWeb || Front End Web Developer</title>
 
     <!-- Primary Meta Tags -->
@@ -66,64 +69,66 @@
     ></div>
     <script type="module" src="/src/main.jsx"></script>
 
-    
-<!-- Paste This Code Into Your Route .html File -->
-<script>
-(function () {
-  const API = "http://localhost:3000/api/track";
-  const API_KEY = "41576d498b4f9f32260195382d8b9bdc13111b3e4a38af32a61b0934a1523774";
+    <!-- Paste This Code Into Your Route .html File -->
+    <script>
+      (function () {
+        const API = "http://localhost:3000/api/track";
+        const API_KEY =
+          "41576d498b4f9f32260195382d8b9bdc13111b3e4a38af32a61b0934a1523774";
 
-  let hasPinged = false;
+        let hasPinged = false;
 
-  function sendPing() {
-    // block duplicates by page load
-    if (hasPinged) return;
-    hasPinged = true;
+        function sendPing() {
+          // block duplicates by page load
+          if (hasPinged) return;
+          hasPinged = true;
 
-    // block duplicates per tab
-    if (sessionStorage.getItem("hasPinged") === "true") return;
-    sessionStorage.setItem("hasPinged", "true");
-    function getOrCreateUserId() {
-    let id = localStorage.getItem("uniqueUserId");
-    if (!id) {
-      id = crypto.randomUUID();
-      localStorage.setItem("uniqueUserId", id);
-    }
-    return id;
-  }
-    const userId = getOrCreateUserId();
-    const payload = {
-      apiKey: API_KEY,
-      userId,
-      url: location.href,
-      path: location.pathname + location.search,
-      referrer: document.referrer || null,
-      timestamp: Date.now(),
-      client: {
-        ua: navigator.userAgent,
-        platform: navigator.platform,
-        language: navigator.language,
-        screen: { width: screen.width, height: screen.height }
-      }
-    };
+          // block duplicates per tab
+          if (sessionStorage.getItem("hasPinged") === "true") return;
+          sessionStorage.setItem("hasPinged", "true");
+          function getOrCreateUserId() {
+            let id = localStorage.getItem("uniqueUserId");
+            if (!id) {
+              id = crypto.randomUUID();
+              localStorage.setItem("uniqueUserId", id);
+            }
+            return id;
+          }
+          const userId = getOrCreateUserId();
+          const payload = {
+            apiKey: API_KEY,
+            userId,
+            url: location.href,
+            path: location.pathname + location.search,
+            referrer: document.referrer || null,
+            timestamp: Date.now(),
+            client: {
+              ua: navigator.userAgent,
+              platform: navigator.platform,
+              language: navigator.language,
+              screen: { width: screen.width, height: screen.height },
+            },
+          };
 
-    fetch(API, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    }).catch(console.error);
-  }
+          fetch(API, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          }).catch(console.error);
+        }
 
-  // Run only once
-  if (document.readyState === "complete" || document.readyState === "interactive") {
-    sendPing();
-  } else {
-    document.addEventListener("DOMContentLoaded", sendPing, { once: true });
-  }
-
-})();
-</script>
-
-
+        // Run only once
+        if (
+          document.readyState === "complete" ||
+          document.readyState === "interactive"
+        ) {
+          sendPing();
+        } else {
+          document.addEventListener("DOMContentLoaded", sendPing, {
+            once: true,
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
