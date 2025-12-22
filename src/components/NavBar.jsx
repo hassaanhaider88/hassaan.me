@@ -109,7 +109,7 @@ const NavBar = ({ Projectpage }) => {
     <>
       <div
         ref={NavBar}
-        className="top-5  mx-5 w-[95vw]  z-40 fixed flex justify-between items-center bg-[#ffffffaf] dark:bg-[#000000ab] shadow-[#666363dc] shadow-md dark:shadow-[#dfdbdb] px-5 py-3 rounded-3xl text-black dark:text-white  cursor-pointer overflow-hidden Inter_Font tInter_Fon"
+        className="top-5  mx-5 w-[95vw]  z-40 fixed flex justify-between items-center bg-[#ffffffaf] dark:bg-[#000000ab] shadow-[#666363dc] px-5 py-3 rounded-3xl text-black dark:text-white  cursor-pointer overflow-hidden Inter_Font tInter_Fon"
       >
         {/* Left side bar Contianer */}
         <div className="relative flex justify-between items-center md:gap-5 md2:gap-12 px-2 w-[50%]">

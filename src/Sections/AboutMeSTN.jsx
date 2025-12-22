@@ -7,7 +7,6 @@ import { HashLink } from "react-router-hash-link";
 
 gsap.registerPlugin(ScrollTrigger);
 const AboutMeSTN = () => {
-  const circleRef = useRef(null);
   const containerRef = useRef(null);
 
   useGSAP(() => {
@@ -60,30 +59,10 @@ const AboutMeSTN = () => {
     });
   }, []);
 
-  const handleMouseLeave = () => {
-    circleRef.rotateX = 0;
-    circleRef.rotateY = 0;
-  };
-
-  const handleMouseMove = (e) => {
-    const circle = circleRef.current;
-
-    const { left, top, width, height } = circle.getBoundingClientRect();
-    const x = e.clientX - left - width / 2;
-    const y = e.clientY - top - height / 2;
-
-    const rotateX = -(y / height) * 30;
-    const rotateY = (x / width) * 30;
-
-    circle.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  };
-
   return (
     <div
       ref={containerRef}
       id="AboutSection"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
       className="block relative md2:flex justify-evenly pt-[10%] w-full min-h-screen open-sans"
     >
       <div
@@ -115,7 +94,11 @@ const AboutMeSTN = () => {
             id="ParaText"
             className="w-[250px]  pt-5 xsm:w-[400px] text-black dark:text-white"
           >
-            I'm a Front-End Developer skilled in React.js and Next.js, focused on creating smooth and dynamic user interfaces. I also work with the MERN stack (MongoDB, Express.js, React, Node.js) to build full-stack applications. I'm comfortable using Git and GitHub, which helps me manage code and collaborate effectively.
+            I'm a Front-End Developer skilled in React.js and Next.js, focused
+            on creating smooth and dynamic user interfaces. I also work with the
+            MERN stack (MongoDB, Express.js, React, Node.js) to build full-stack
+            applications. I'm comfortable using Git and GitHub, which helps me
+            manage code and collaborate effectively.
           </p>
           <div className="bg-[#cd17b9] mt-10 mb-2 px-6 py-2 rounded-full w-fit text-black dark:text-white transition cursor-pointer hover:scale-95 duration-500 ContactUsBtn MyButton">
             <HashLink smooth to={"#contactme"}>
