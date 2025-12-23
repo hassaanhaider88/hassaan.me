@@ -13,7 +13,6 @@
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.1",
     "@hmk_codeweb88/useglobalstate": "^1.0.3",
-    "framer-motion": "^12.23.25",
     "gsap": "^3.12.5",
     "lenis": "^1.1.16",
     "react": "^18.3.1",
