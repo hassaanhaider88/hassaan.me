@@ -141,7 +141,7 @@ const NavBar = ({ Projectpage }) => {
           ref={toggleTheme}
           className="sm2:flex justify-end items-center gap-3 md2:gap-8 hidden w-[40%]"
         >
-          <div className="flex justify-center items-center gap-2 toggleButtonDayAndNight">
+          {/* <div className="flex justify-center items-center gap-2 toggleButtonDayAndNight">
             <span>Light</span>
             <label className="switch">
               <input
@@ -152,7 +152,27 @@ const NavBar = ({ Projectpage }) => {
               <span className="slider"></span>
             </label>
             <span>Dark</span>
-          </div>
+          </div> */}
+          <label class="container">
+            <input onChange={handleToggleTheme} type="checkbox" checked={isChecked} />
+            <div class="checkmark">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <title>Theme</title>
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M416 128L192 384l-96-96"
+                ></path>
+              </svg>
+            </div>
+          </label>
           <div
             onClick={handleWhatsAppUrl}
             className="bg-[#320a58e7] hover:bg-[#575558d0] px-6 py-2 rounded-full text-green-500 text-lg hover:scale-105 transition duration-300 ContactUsBtn"
@@ -206,18 +226,6 @@ const NavBar = ({ Projectpage }) => {
         </div>
         <div>
           <div className="flex flex-col justify-start items-start gap-2 mt-2">
-            <div className="flex justify-start items-center gap-2 toggleButtonDayAndNight">
-              <span>Light</span>
-              <label className="switch">
-                <input
-                  type="checkbox"
-                  checked={isChecked}
-                  onChange={handleToggleTheme}
-                />
-                <span className="slider"></span>
-              </label>
-              <span>Dark</span>
-            </div>
             <div
               onClick={handleWhatsAppUrl}
               className="bg-[#320a58e7] hover:bg-[#7c4ca8d0] mb-2 px-6 py-2 rounded-full w-fit text-white hover:scale-105 transition duration-300 ContactUsBtn"

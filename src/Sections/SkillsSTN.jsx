@@ -11,16 +11,16 @@ import { AiFillHtml5 } from "react-icons/ai";
 const SkillsSTN = () => {
   // Define cards data to keep JSX clean
   const cards = [
-    { id: 1, color: "142, 249, 252", icon: AiFillHtml5 },
-    { id: 2, color: "142, 252, 204", icon: DiCss3 },
-    { id: 3, color: "142, 252, 157", icon: FaJsSquare },
-    { id: 4, color: "215, 252, 142", icon: RiReactjsFill },
-    { id: 5, color: "252, 252, 142", icon: FaNode },
-    { id: 6, color: "252, 208, 142", icon: SiExpress },
-    { id: 7, color: "252, 142, 142", icon: DiMongodb },
-    { id: 9, color: "204, 142, 252", icon: SiNextdotjs },
-    { id: 8, color: "252, 142, 239", icon: BsGit },
-    { id: 10, color: "142, 202, 252", icon: AiFillGithub },
+    { id: 1, skillname: "HTML ", icon: AiFillHtml5 },
+    { id: 2, skillname: "CSS", icon: DiCss3 },
+    { id: 3, skillname: "JavaScript", icon: FaJsSquare },
+    { id: 4, skillname: "React Js", icon: RiReactjsFill },
+    { id: 5, skillname: "Node Js", icon: FaNode },
+    { id: 6, skillname: "Express Js", icon: SiExpress },
+    { id: 7, skillname: "MongoDB", icon: DiMongodb },
+    { id: 9, skillname: "Next Js", icon: SiNextdotjs },
+    { id: 8, skillname: "Git", icon: BsGit },
+    { id: 10, skillname: "GitHub", icon: AiFillGithub },
   ];
 
   return (
@@ -31,26 +31,20 @@ const SkillsSTN = () => {
           "--quantity": cards.length,
         }}
       >
-        <h1 className="text-xl text-white fontsemibold">My Skills</h1>
+        <h1 className="text-xl text-black dark:text-white fontsemibold">My Skills</h1>
         {cards.map((card, index) => (
           <div
             key={card.id}
-            className="item flex justify-center items-center w-full absolute inset-0 overflow-hidden rounded-xl border-2 border-[rgba(var(--color-card))] p-0"
+            className="item flex flex-col text-black dark:text-white justify-center items-center w-full absolute inset-0 overflow-hidden rounded-xl border-2 border-[#790573] p-0"
             style={{
               "--index": index,
-              "--color-card": card.color,
             }}
           >
-            <card.icon size={50} color="white" />
-            {/* <AiFillGithub size={50} color="white" /> */}
+            <card.icon size={50} className="text-black dark:text-white" />
+            <h1>{card.skillname}</h1>
           </div>
         ))}
       </div>
-
-      {/* Injecting the specific 3D CSS logic here. 
-        In a real Next.js/Create-React-App project, 
-        this would go in your global.css or a module.css file.
-      */}
       <style>{`
         .slider {
           /* Dimensions */

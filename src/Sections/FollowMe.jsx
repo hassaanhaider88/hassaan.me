@@ -86,7 +86,7 @@ const FollowMe = () => {
  ]
 
   return (
-    <div className="flex overflow-x-hidden sm:flex-row flex-col justify-center sm:justify-between items-center gap-5 px-10 py-3 w-full text-black dark:text-white">
+    <div className="flex  overflow-hidden sm:flex-row flex-col justify-center sm:justify-between items-center gap-5 px-10 py-3 w-full text-black dark:text-white">
       <div className="flex flex-col items-center gap-3">
         <h1 className="py-3 font-semibold text-3xl text-nowrap xsm:text-7xl overflow-hidden FollowHeading">
           Follow me
@@ -109,13 +109,13 @@ const FollowMe = () => {
           <CricleOrDot OpacityVal={"opacity-[0.1]xsm:block hidden"} />
         </div>
       </div>
-      <div className="gap-2 grid grid-cols-3">
+      <div className="gap-3 grid grid-cols-3">
         {AllIcons.map((icon, idx) => {
           return (
             <Link to={icon.redirectToURL}>
               <div
                 key={idx}
-                className={`flex justify-center items-center bg-white hover:bg-[#ad15ab] dark:hover:bg-[#ad15ab] dark:bg-black rounded-full w-10 text-[#ad15ab] text-2xl hover:text-white hover:scale-95 h-10 dark:hover:text-black duration-200 cursor-pointer`}
+                className={`flex justify-center items-center bg-white hover:bg-[#ad15ab] dark:hover:bg-[#ad15ab] dark:bg-black rounded-full w-12 text-[#ad15ab] text-2xl hover:text-white hover:scale-95 h-12 dark:hover:text-black duration-200 cursor-pointer`}
               >
                 <icon.Name />
               </div>
