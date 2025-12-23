@@ -14,6 +14,7 @@ const HeroSection = () => {
         id="home"
         className="relative overflow-x-hidden w-[100vw] h-[200vh] md2:h-[100vh] HeroSectionDiv Inter_Font"
       >
+        
         <NavBar Projectpage={false} />
         <LeftSlashes />
         <div className="block top-0 absolute md2:flex justify-evenly items-center gap-3 w-full text-white TextAndPictureDiv">

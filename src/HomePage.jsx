@@ -10,6 +10,7 @@ import "./App.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import LetStarted from "./Sections/LetStarted";
 
 gsap.registerPlugin(ScrollTrigger);
 const HomePage = () => {
@@ -89,9 +90,14 @@ const HomePage = () => {
         <div id="ProjectsDiv">
           <MyProjectsSTN />
         </div>
+        
         <hr id="contactme" className="HorinzontalLine" />
         <div id="CotactmeDiv">
           <ContactUs />
+        </div>
+        <hr   className="HorinzontalLine"/>
+        <div>
+          <LetStarted/>
         </div>
         <hr id="FollowMe" className="HorinzontalLine" />
         <FollowMe />
