@@ -1,4 +1,4 @@
-import { AiFillGithub } from "react-icons/ai";
+import { SiTypescript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { DiMongodb } from "react-icons/di";
@@ -19,8 +19,8 @@ const SkillsSTN = () => {
     { id: 6, skillname: "Express Js", icon: SiExpress },
     { id: 7, skillname: "MongoDB", icon: DiMongodb },
     { id: 9, skillname: "Next Js", icon: SiNextdotjs },
+    { id: 10, skillname: "TypeScript", icon: SiTypescript },
     { id: 8, skillname: "Git", icon: BsGit },
-    { id: 10, skillname: "GitHub", icon: AiFillGithub },
   ];
 
   return (
@@ -31,7 +31,9 @@ const SkillsSTN = () => {
           "--quantity": cards.length,
         }}
       >
-        <h1 className="text-xl text-black dark:text-white fontsemibold">My Skills</h1>
+        <h1 className="text-xl text-black dark:text-white fontsemibold">
+          My Skills
+        </h1>
         {cards.map((card, index) => (
           <div
             key={card.id}

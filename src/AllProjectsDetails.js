@@ -1,5 +1,17 @@
 const AllProjectsData = [
   {
+    id: "projectNumber00",
+    ProjectImgURl: "../APEXAI.png",
+    ProjectImgName: "APEX AI",
+    ProjectDesc:
+      "Code Backend for this project in node express js and mongoDB and handle authentication and authorization with JWT token",
+    ProjectImgCreatedAt: "22 DEC 2025",
+    ProjectUrlRedirectTo: "https://apexai-pk.netlify.app/",
+    IconsDirection: "bottom-5 left-5",
+    FlexDirecton: "flex-row-reverse",
+    XVal: "200px",
+  },
+  {
     id: "projectNumber01",
     ProjectImgURl: "../GetURI.png",
     ProjectImgName: "Get URI",
