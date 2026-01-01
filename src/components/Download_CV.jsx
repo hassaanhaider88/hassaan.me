@@ -1,8 +1,5 @@
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
-import React from "react";
-import { FaTelegramPlane } from "react-icons/fa"; // replace by Download icon
-import { FaDownload } from "react-icons/fa6";
+/* eslint-disable react/prop-types */
+
 import DrawingAnimBtn from "./DrawingAnimBtn";
 
 const DownloadCV = ({ setIsCVDownloaderOpen, IsCVDownloaderOpen }) => {

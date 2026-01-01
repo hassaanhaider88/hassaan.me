@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef, useState } from "react";
 
@@ -153,21 +154,25 @@ const NavBar = ({ Projectpage }) => {
             </label>
             <span>Dark</span>
           </div> */}
-          <label class="container">
-            <input onChange={handleToggleTheme} type="checkbox" checked={isChecked} />
-            <div class="checkmark">
+          <label className="container">
+            <input
+              onChange={handleToggleTheme}
+              type="checkbox"
+              checked={isChecked}
+            />
+            <div className="checkmark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="ionicon"
+                className="ionicon"
                 viewBox="0 0 512 512"
               >
                 <title>Theme</title>
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="32"
                   d="M416 128L192 384l-96-96"
                 ></path>
               </svg>

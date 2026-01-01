@@ -7,7 +7,7 @@ const DrawingAnimBtn = () => {
       <button className="button">
         <svg
           className="button-cosm"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
           fill="#000000"
           width="128"
           height="128"

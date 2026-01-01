@@ -1,10 +1,8 @@
-import React, { useRef } from "react";
-import { FaFacebookF, FaLinkedinIn, FaUpwork } from "react-icons/fa6";
+/* eslint-disable react/prop-types */
+
+import { FaLinkedinIn, FaUpwork } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
-import { IoLogoVercel } from "react-icons/io5";
-import { FaWhatsapp } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
@@ -58,32 +56,33 @@ const FollowMe = () => {
     });
   }, []);
 
- const AllIcons = [
-     { 
-         Name : FaLinkedinIn,
-         redirectToURL : "https://www.linkedin.com/in/hassaan-haider-627272294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-     },
-     { 
-         Name :  FiGithub,
-         redirectToURL : "https://github.com/hassaanhaider88"
-      },
-     { 
-         Name :  FaUpwork,
-         redirectToURL : "https://www.upwork.com/freelancers/~018dbe8e7b42678764"
-     },
-     { 
-         Name :  TbBrandFiverr,
-         redirectToURL : "https://www.fiverr.com/s/Y3vyLp"
-      },
-     { 
-         Name :  BiLogoNetlify,
-         redirectToURL : "https://app.netlify.com/teams/hassaanhaider88"
-     },
-     { 
-         Name :  FaTelegramPlane,
-         redirectToURL : "https://t.me/HMKCodeWeb"
-     }
- ]
+  const AllIcons = [
+    {
+      Name: FaLinkedinIn,
+      redirectToURL:
+        "https://www.linkedin.com/in/hassaan-haider-627272294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      Name: FiGithub,
+      redirectToURL: "https://github.com/hassaanhaider88",
+    },
+    {
+      Name: FaUpwork,
+      redirectToURL: "https://www.upwork.com/freelancers/~018dbe8e7b42678764",
+    },
+    {
+      Name: TbBrandFiverr,
+      redirectToURL: "https://www.fiverr.com/s/Y3vyLp",
+    },
+    {
+      Name: BiLogoNetlify,
+      redirectToURL: "https://app.netlify.com/teams/hassaanhaider88",
+    },
+    {
+      Name: FaTelegramPlane,
+      redirectToURL: "https://t.me/HMKCodeWeb",
+    },
+  ];
 
   return (
     <div className="flex  overflow-hidden sm:flex-row flex-col justify-center sm:justify-between items-center gap-5 px-10 py-3 w-full text-black dark:text-white">
@@ -112,9 +111,8 @@ const FollowMe = () => {
       <div className="gap-3 grid grid-cols-3">
         {AllIcons.map((icon, idx) => {
           return (
-            <Link to={icon.redirectToURL}>
+            <Link key={idx} to={icon.redirectToURL}>
               <div
-                key={idx}
                 className={`flex justify-center items-center bg-white hover:bg-[#ad15ab] dark:hover:bg-[#ad15ab] dark:bg-black rounded-full w-12 text-[#ad15ab] text-2xl hover:text-white hover:scale-95 h-12 dark:hover:text-black duration-200 cursor-pointer`}
               >
                 <icon.Name />

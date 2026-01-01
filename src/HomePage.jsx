@@ -76,7 +76,6 @@ const HomePage = () => {
       <div>
         <div id="home">
           <HeroSection />
-          
         </div>
         <hr id="aboutme" className="HorinzontalLine" />
         <div id="AboutmeDiv">
@@ -90,14 +89,14 @@ const HomePage = () => {
         <div id="ProjectsDiv">
           <MyProjectsSTN />
         </div>
-        
+
         <hr id="contactme" className="HorinzontalLine" />
         <div id="CotactmeDiv">
           <ContactUs />
         </div>
-        <hr   className="HorinzontalLine"/>
+        <hr className="HorinzontalLine" />
         <div>
-          <LetStarted/>
+          <LetStarted />
         </div>
         <hr id="FollowMe" className="HorinzontalLine" />
         <FollowMe />
