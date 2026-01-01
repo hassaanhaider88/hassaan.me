@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import HeroSection from "./Sections/HeroSTN";
 import AboutMeSTN from "./Sections/AboutMeSTN";
 import SkillsSTN from "./Sections/SkillsSTN";
@@ -72,11 +71,12 @@ const HomePage = () => {
         id="Preloader"
         className="z-50 fixed flex justify-center items-center bg-[#eb60e4b9] w-screen h-screen"
       >
-        <div class="loader"></div>
+        <div className="loader"></div>
       </div>
       <div>
         <div id="home">
           <HeroSection />
+          
         </div>
         <hr id="aboutme" className="HorinzontalLine" />
         <div id="AboutmeDiv">

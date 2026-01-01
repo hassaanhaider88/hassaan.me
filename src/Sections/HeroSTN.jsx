@@ -1,12 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useRef } from "react";
 import NavBar from "../components/NavBar";
 import LeftSlashes from "../components/LeftSlashes";
-import RightIcons from "../components/RightIcons";
 import HeroLeftText from "../components/HeroLeftText";
 import HeroRightImage from "../components/HeroRightImage";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+
 const HeroSection = () => {
   return (
     <>
