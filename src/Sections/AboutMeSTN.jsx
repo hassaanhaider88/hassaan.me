@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,6 +5,8 @@ import { useRef } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { HashLink } from "react-router-hash-link";
 import ElectricBorder from "../components/ElectricBorder";
+import ShinyText from "../components/ShinyText";
+
 
 gsap.registerPlugin(ScrollTrigger);
 const AboutMeSTN = () => {
@@ -96,23 +97,28 @@ const AboutMeSTN = () => {
       </div>
       <div className="relative flex flex-col justify-evenly items-center md2:items-start mt-10 md2:mt-0 pl-8 w-full md2:w-1/2 aboutMeSmallText">
         <div>
-          <div className="block md2:hidden font-semibold text-6xl text-black dark:text-white">
+          {/* <div className="block md2:hidden font-semibold text-6xl text-black dark:text-white">
             About <br />
             me
-          </div>
+          </div> */}
           <div className="mb-10 ml-[60%] text-[#da4ec7] text-6xl arrowTop self-end">
             <FaArrowRightLong />
           </div>
-          <p
-            id="ParaText"
-            className="w-[250px]  pt-5 xsm:w-[400px] text-black dark:text-white"
-          >
-            I'm a Full Stack MERN Developer skilled in React.js and TypeScript,
+            <ShinyText
+          text="I'm a Full Stack MERN Developer skilled in React.js and TypeScript,
             focused on creating smooth and dynamic user interfaces. I also work
             with the Next Js to build full-stack applications. I'm comfortable
             using Git and GitHub, which helps me manage code and collaborate
-            effectively.
-          </p>
+            effectively"
+          speed={2}
+          delay={0}
+          color="#b5b5b5"
+          shineColor="#ffffff"
+          spread={120}
+          direction="left"
+          yoyo={false}
+          pauseOnHover={false}
+        />
           <div className="bg-[#cd17b9] mt-10 mb-2 px-6 py-2 rounded-full w-fit text-black dark:text-white transition cursor-pointer hover:scale-95 duration-500 ContactUsBtn MyButton">
             <HashLink smooth to={"#contactme"}>
               Contact me
@@ -121,7 +127,7 @@ const AboutMeSTN = () => {
         </div>
       </div>
       <div className="md2:block md2:absolute hidden mt-20 text-7xl text-black dark:text-white">
-        About <br /> me
+    About me
       </div>
     </div>
   );

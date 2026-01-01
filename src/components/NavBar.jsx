@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import { IoLogoWhatsapp } from "react-icons/io";
+import TrueFocus from "./FocusMe";
 
 const NavBar = ({ Projectpage }) => {
   const [isChecked, setIsChecked] = useState(true);
@@ -115,12 +116,15 @@ const NavBar = ({ Projectpage }) => {
         {/* Left side bar Contianer */}
         <div className="relative flex justify-between items-center md:gap-5 md2:gap-12 px-2 w-[50%]">
           {/* User Name Logo Type will be here */}
-          <div ref={logo} className="w-fit h-fit text-4xl LogoUserName">
-            <h1 className="relative font-semibold text-black dark:text-white duration-300">
-              <span>Hassaan</span>
-              <span className="text-[#d217b7] ml-3 line">.</span>
-              <span>Dev</span>
-            </h1>
+          <div ref={logo} className="flex  w-full justify-center items-center text-4xl LogoUserName">
+            <TrueFocus
+              sentence="H M K"
+              manualMode={false}
+              blurAmount={5}
+              borderColor="red"
+              animationDuration={2}
+              pauseBetweenAnimations={1}
+            />
           </div>
           {/* NavBar Link goes here */}
           {/* NavBar Links */}
