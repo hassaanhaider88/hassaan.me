@@ -5,8 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html * {
   scroll-behavior: smooth;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 

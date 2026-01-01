@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { HashLink } from "react-router-hash-link";
 import ElectricBorder from "../components/ElectricBorder";
 import ShinyText from "../components/ShinyText";
-
+import { GradualSpacing } from "../components/AboutMeText";
 
 gsap.registerPlugin(ScrollTrigger);
 const AboutMeSTN = () => {
@@ -104,21 +104,21 @@ const AboutMeSTN = () => {
           <div className="mb-10 ml-[60%] text-[#da4ec7] text-6xl arrowTop self-end">
             <FaArrowRightLong />
           </div>
-            <ShinyText
-          text="I'm a Full Stack MERN Developer skilled in React.js and TypeScript,
+          <ShinyText
+            text="I'm a Full Stack MERN Developer skilled in React.js and TypeScript,
             focused on creating smooth and dynamic user interfaces. I also work
             with the Next Js to build full-stack applications. I'm comfortable
             using Git and GitHub, which helps me manage code and collaborate
             effectively"
-          speed={2}
-          delay={0}
-          color="#b5b5b5"
-          shineColor="#ffffff"
-          spread={120}
-          direction="left"
-          yoyo={false}
-          pauseOnHover={false}
-        />
+            speed={2}
+            delay={0}
+            color="#b5b5b5"
+            shineColor="#ffffff"
+            spread={120}
+            direction="left"
+            yoyo={false}
+            pauseOnHover={false}
+          />
           <div className="bg-[#cd17b9] mt-10 mb-2 px-6 py-2 rounded-full w-fit text-black dark:text-white transition cursor-pointer hover:scale-95 duration-500 ContactUsBtn MyButton">
             <HashLink smooth to={"#contactme"}>
               Contact me
@@ -127,7 +127,7 @@ const AboutMeSTN = () => {
         </div>
       </div>
       <div className="md2:block md2:absolute hidden mt-20 text-7xl text-black dark:text-white">
-    About me
+        <GradualSpacing text="About Me" />
       </div>
     </div>
   );
