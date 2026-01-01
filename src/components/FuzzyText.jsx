@@ -21,7 +21,7 @@ const FuzzyText = ({
   glitchDuration = 200,
   gradient = null,
   letterSpacing = 0,
-  className = "my-5 text-white dark:text-black",
+  className = "my-5 -mx-6 text-white dark:text-black",
 }) => {
   const canvasRef = useRef(null);
 
