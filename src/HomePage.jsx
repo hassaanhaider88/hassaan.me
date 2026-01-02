@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import HeroSection from "./Sections/HeroSTN";
 import AboutMeSTN from "./Sections/AboutMeSTN";
 import SkillsSTN from "./Sections/SkillsSTN";
@@ -88,8 +89,8 @@ const HomePage = () => {
         </div>
         <hr id="projects" className="HorinzontalLine" />
         <div id="ProjectsDiv">
-          <ProjectStn/>
-          {/* <MyProjectsSTN /> */}
+          {/* <ProjectStn/> */}
+          <MyProjectsSTN />
         </div>
 
         <hr id="contactme" className="HorinzontalLine" />

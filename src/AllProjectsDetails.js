@@ -13,25 +13,11 @@ import AnimationalPorfolioMk from "./assets/AnimatedPortfolioMk.png";
 const AllProjectsData = [
   {
     id: "projectNumber00",
-    ProjectImgURl: "../APEXAI.png",
-    ProjectmockUpImg: APIXAIMk,
-    ProjectImgName: "APEX AI",
-    ProjectDesc:
-      "Code Backend for this project in node express js and mongoDB and handle authentication and authorization with JWT token",
-    ProjectImgCreatedAt: "22 DEC 2025",
-    ProjectUrlRedirectTo: "https://apexai-pk.netlify.app/",
-    IconsDirection: "bottom-5 left-5",
-    FlexDirecton: "flex-row-reverse",
-    XVal: "200px",
-  },
-  {
-    id: "projectNumber01",
     ProjectImgURl: "../GetURI.png",
     ProjectmockUpImg: GetURIMk,
-
     ProjectImgName: "Get URI",
     ProjectDesc:
-      "Built for speed, efficiency, and ease of use. GetURI eliminates the complexity of media hosting so you can focus on what matters most—building amazing products.",
+    "A developer-focused media hosting platform built for speed and simplicity. Abstracts file handling and delivery so teams can focus on building products instead of managing infrastructure.",
     ProjectImgCreatedAt: "20 JUNE 2025",
     ProjectUrlRedirectTo: "https://www.geturi.online",
     IconsDirection: "bottom-5 right-5",
@@ -39,190 +25,229 @@ const AllProjectsData = [
     XVal: "-200%",
   },
   {
+    id: "projectNumber01",
+    ProjectImgURl: "../APEXAI.png",
+    ProjectmockUpImg: APIXAIMk,
+    ProjectImgName: "APEX AI",
+    ProjectDesc:
+      "Designed and developed a secure backend architecture using Node.js, Express, and MongoDB. Implemented JWT-based authentication and authorization to ensure scalable and secure API access.",
+    ProjectImgCreatedAt: "22 DEC 2025",
+    ProjectUrlRedirectTo: "https://apexai-pk.netlify.app/",
+    IconsDirection: "bottom-5 left-5",
+    FlexDirecton: "flex-row-reverse",
+    XVal: "200px",
+  },
+  
+  {
     id: "projectNumber02",
     ProjectImgURl: "../PersonaAEye.png",
     ProjectmockUpImg: PersonaAEyeMk,
-    ProjectImgName: "PersonaAEye AI Project",
+    ProjectImgName: "PersonaAEye AI",
     ProjectDesc:
-      "Developed using ReactJS, Zustand and  Tailwind CSS. Fully responsive design.",
+      "AI-powered frontend experience built with React, Zustand, and Tailwind CSS. Focused on performance, responsiveness, and clean state management.",
     ProjectImgCreatedAt: "13 JUN 2025",
     ProjectUrlRedirectTo: "https://personaaeye.netlify.app/",
     IconsDirection: "bottom-5 left-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "200px",
   },
+
   {
     id: "projectNumber03",
     ProjectImgURl: "../PinsYourInterest1.png",
     ProjectmockUpImg: PinsYourInterestMk,
     ProjectImgName: "Pinterest Clone",
     ProjectDesc:
-      "Developed using Node.js, Express.js, MongoDB, EJS, and Tailwind CSS. Fully responsive design.",
+      "A full-stack Pinterest-inspired platform developed with Node.js, Express, MongoDB, and EJS. Includes user authentication, pin management, and responsive UI.",
     ProjectImgCreatedAt: "10 JAN 2025",
     ProjectUrlRedirectTo: "https://pinsyourinterest.onrender.com",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row",
     XVal: "-200px",
   },
+
   {
     id: "projectNumber04",
     ProjectImgURl: "../ButtonJs.png",
     ProjectmockUpImg: ButtonJsMk,
     ProjectImgName: "Button JS",
     ProjectDesc:
-      "Implemented with  React.js and Tailwind CSS. Fully responsive. Open Source Project to help bigginner's to contribute this project easily",
+      "An open-source React component library aimed at beginners. Built with React and Tailwind CSS to encourage contribution and learning through real-world components.",
     ProjectImgCreatedAt: "11 AUG 2025",
     ProjectUrlRedirectTo: "https://buttonjs.vercel.app",
     IconsDirection: "bottom-5 left-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "50%",
   },
+
   {
     id: "projectNumber05",
     ProjectImgURl: "../Gulzar-Sons-Furniture.png",
     ProjectmockUpImg: GulzarSonsMk,
-    ProjectImgName: "Furniture Website Live",
+    ProjectImgName: "Gulzar Sons Furniture",
     ProjectDesc:
-      "Code in Vanilla js and Write Complete BackEnd In Nodejs and mongoose",
+      "A production-ready business website built with Vanilla JavaScript and a custom Node.js backend using MongoDB for product and order management.",
     ProjectImgCreatedAt: "2 JUNE 2025",
     ProjectUrlRedirectTo: "http://gulzarsonsfurniture.com",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "200%",
   },
+
   {
     id: "projectNumber06",
     ProjectImgURl: "../DevTRACE.png",
     ProjectmockUpImg: DevTraceMk,
-    ProjectImgName: "Live Website Tracking In MERN",
+    ProjectImgName: "DevTrace",
     ProjectDesc:
-      "Developed In MERN Stack To Track Live Visitors On Your Website With Details Like Location, Device, TimeSpent And More",
+      "A MERN-based analytics tool to track live website visitors with insights such as location, device type, session duration, and real-time activity.",
     ProjectImgCreatedAt: "15 NOV 2025",
     ProjectUrlRedirectTo: "https://devtrace-hmkcodeweb.netlify.app",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row",
     XVal: "-200%",
   },
+
   {
     id: "projectNumber07",
     ProjectImgURl: "../AnimationalPorfolio.jpeg",
     ProjectmockUpImg: AnimationalPorfolioMk,
     ProjectImgName: "Animated Portfolio",
     ProjectDesc:
-      "Created using HTML5, Tailwind CSS, jQuery, and GSAP. Fully responsive with smooth animations.",
+      "A visually rich personal portfolio created using HTML, Tailwind CSS, jQuery, and GSAP, focusing on smooth animations and interactive transitions.",
     ProjectImgCreatedAt: "3 JAN 2024",
     ProjectUrlRedirectTo: "https://hassaanhaider88portfolio.netlify.app/",
     IconsDirection: "bottom-5 left-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "200%",
   },
-  {
-    id: "projectNumber08",
-    ProjectImgURl: "../FirstPorfolio.jpeg",
-    ProjectImgName: "Portfolio V1",
-    ProjectDesc: "Built with HTML5, CSS3, and JavaScript. Fully responsive.",
-    ProjectImgCreatedAt: "2 AUG 2023",
-    ProjectUrlRedirectTo: "https://hassaanhaider88.github.io/HMK_Portfolio/",
-    IconsDirection: "bottom-5 right-5",
-    FlexDirecton: "flex-row",
-    XVal: "-200%",
-  },
-  {
-    id: "projectNumber09",
-    ProjectImgURl: "../SonglessSongs.png",
-    ProjectImgName: "Music App Clone",
-    ProjectDesc:
-      "Developed using HTML5, CSS3, and JavaScript. Fully responsive.",
-    ProjectImgCreatedAt: "2 OCT 2024",
-    ProjectUrlRedirectTo: "https://songless-songs.netlify.app/",
-    IconsDirection: "bottom-5 left-5",
-    FlexDirecton: "flex-row-reverse",
-    XVal: "50%",
-  },
+
   {
     id: "projectNumber10",
     ProjectImgURl: "../E_CommerceWeb.png",
     ProjectmockUpImg: ECommerceWebMk,
     ProjectImgName: "E-Commerce Store",
     ProjectDesc:
-      "Built with React.js, Tailwind CSS, JSX, and Context API. Fully responsive.",
+      "A fully responsive e-commerce application built with React, Tailwind CSS, and Context API, featuring product listings, cart management, and state-driven UI.",
     ProjectImgCreatedAt: "20 DEC 2023",
     ProjectUrlRedirectTo: "https://hmk-shop-by-hassaan-haider.netlify.app/",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row",
     XVal: "-200%",
   },
-  {
-    id: "projectNumber11",
-    ProjectImgURl: "../DotGridDev.png",
-    ProjectImgName: "Dot Grid Dev",
-    ProjectDesc:
-      "Created In Vanilla Js To Help Out Creation Of CSS Clip Path Shapes With ease",
-    ProjectImgCreatedAt: "16 JUNE 2025",
-    ProjectUrlRedirectTo: "https://dot-grid-dev.netlify.app/",
-    IconsDirection: "bottom-5 left-5",
-    FlexDirecton: "flex-row-reverse",
-    XVal: "50%",
-  },
-  {
-    id: "projectNumber12",
-    ProjectImgURl: "../FoodEat.png",
-    ProjectImgName: "FoodEat Resturant Web",
-    ProjectDesc: "Built with HTML and  Tailwind CSS. Fully responsive.",
-    ProjectImgCreatedAt: "20 JUNE 2025",
-    ProjectUrlRedirectTo: "https://foodeat-by-hmk.netlify.app/",
-    IconsDirection: "bottom-5 right-5",
-    FlexDirecton: "flex-row",
-    XVal: "-150%",
-  },
-  {
-    id: "projectNumber13",
-    ProjectImgURl: "../Vs-CodeWeb.png",
-    ProjectImgName: "Vs CodeWeb Editor",
-    ProjectDesc:
-      "Created In React And Monaco To Make VS Code Alternative Web Based Live Editor",
-    ProjectImgCreatedAt: "23 JUNE 2025",
-    ProjectUrlRedirectTo: "",
-    IconsDirection: "bottom-5 left-5",
-    FlexDirecton: "flex-row-reverse",
-    XVal: "50%",
-  },
-  {
-    id: "projectNumber14",
-    ProjectImgURl: "../Color-Picker.png",
-    ProjectImgName: "Choose Thousand of Colors for Free",
-    ProjectDesc: "Built with HTML and  Tailwind CSS. Fully responsive.",
-    ProjectImgCreatedAt: "20 JUNE 2024",
-    ProjectUrlRedirectTo: "https://vscodeweb1.netlify.app/",
-    IconsDirection: "bottom-5 right-5",
-    FlexDirecton: "flex-row",
-    XVal: "-100%",
-  },
+
   {
     id: "projectNumber15",
     ProjectImgURl: "../BloggingSite.jpeg",
     ProjectmockUpImg: BloggingSiteMk,
     ProjectImgName: "Blogging Platform",
     ProjectDesc:
-      "Implemented with Next.js, React.js, Context API, Tailwind CSS, authentication, and authorization. Fully responsive.",
+      "A modern blogging platform built with Next.js and Tailwind CSS, featuring authentication, authorization, and scalable content management.",
     ProjectImgCreatedAt: "20 FEB 2024",
     ProjectUrlRedirectTo: "https://hmk-codeweb.netlify.app",
     IconsDirection: "bottom-5 left-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "50%",
   },
+
   {
     id: "projectNumber16",
     ProjectImgURl: "../CurrentPortfolio.jpeg",
     ProjectmockUpImg: CurrentPortfolioMk,
     ProjectImgName: "Portfolio V3",
     ProjectDesc:
-      "Crafted with HTML5, CSS3, JavaScript, and GSAP. Fully responsive and animated.",
+      "A refined personal portfolio showcasing animations, performance optimization, and clean UI using JavaScript and GSAP.",
     ProjectImgCreatedAt: "6 SEP 2023",
     ProjectUrlRedirectTo: "https://hmk-codeweb.netlify.app/",
     IconsDirection: "bottom-5 right-5",
     FlexDirecton: "flex-row-reverse",
     XVal: "20%",
+  },
+
+  // ================== PROJECTS WITHOUT MOCKUPS ==================
+
+  {
+    id: "projectNumber08",
+    ProjectImgURl: "../FirstPorfolio.jpeg",
+    ProjectmockUpImg: "",
+    ProjectImgName: "Portfolio V1",
+    ProjectDesc:
+      "My first professional portfolio built with HTML, CSS, and JavaScript, laying the foundation for responsive layouts and core frontend concepts.",
+    ProjectImgCreatedAt: "2 AUG 2023",
+    ProjectUrlRedirectTo: "https://hassaanhaider88.github.io/HMK_Portfolio/",
+    IconsDirection: "bottom-5 right-5",
+    FlexDirecton: "flex-row",
+    XVal: "-200%",
+  },
+
+  {
+    id: "projectNumber09",
+    ProjectImgURl: "../SonglessSongs.png",
+    ProjectmockUpImg: "",
+    ProjectImgName: "Music App Clone",
+    ProjectDesc:
+      "A frontend-focused music streaming UI clone built with HTML, CSS, and JavaScript, emphasizing layout structure and responsiveness.",
+    ProjectImgCreatedAt: "2 OCT 2024",
+    ProjectUrlRedirectTo: "https://songless-songs.netlify.app/",
+    IconsDirection: "bottom-5 left-5",
+    FlexDirecton: "flex-row-reverse",
+    XVal: "50%",
+  },
+
+  {
+    id: "projectNumber11",
+    ProjectImgURl: "../DotGridDev.png",
+    ProjectmockUpImg: "",
+    ProjectImgName: "Dot Grid Dev",
+    ProjectDesc:
+      "A utility tool built in Vanilla JavaScript to simplify the creation of complex CSS clip-path shapes for designers and developers.",
+    ProjectImgCreatedAt: "16 JUNE 2025",
+    ProjectUrlRedirectTo: "https://dot-grid-dev.netlify.app/",
+    IconsDirection: "bottom-5 left-5",
+    FlexDirecton: "flex-row-reverse",
+    XVal: "50%",
+  },
+
+  {
+    id: "projectNumber12",
+    ProjectImgURl: "../FoodEat.png",
+    ProjectmockUpImg: "",
+    ProjectImgName: "FoodEat Restaurant Website",
+    ProjectDesc:
+      "A clean and responsive restaurant website built with HTML and Tailwind CSS, focused on layout consistency and mobile-first design.",
+    ProjectImgCreatedAt: "20 JUNE 2025",
+    ProjectUrlRedirectTo: "https://foodeat-by-hmk.netlify.app/",
+    IconsDirection: "bottom-5 right-5",
+    FlexDirecton: "flex-row",
+    XVal: "-150%",
+  },
+
+  {
+    id: "projectNumber13",
+    ProjectImgURl: "../Vs-CodeWeb.png",
+    ProjectmockUpImg: "",
+    ProjectImgName: "VS Code Web Editor",
+    ProjectDesc:
+      "A web-based code editor built with React and Monaco Editor, designed to replicate core VS Code editing capabilities in the browser.",
+    ProjectImgCreatedAt: "23 JUNE 2025",
+    ProjectUrlRedirectTo: "",
+    IconsDirection: "bottom-5 left-5",
+    FlexDirecton: "flex-row-reverse",
+    XVal: "50%",
+  },
+
+  {
+    id: "projectNumber14",
+    ProjectImgURl: "../Color-Picker.png",
+    ProjectmockUpImg: "",
+    ProjectImgName: "Color Picker Tool",
+    ProjectDesc:
+      "A lightweight color selection tool built with HTML and Tailwind CSS to help developers quickly explore and copy color palettes.",
+    ProjectImgCreatedAt: "20 JUNE 2024",
+    ProjectUrlRedirectTo: "https://vscodeweb1.netlify.app/",
+    IconsDirection: "bottom-5 right-5",
+    FlexDirecton: "flex-row",
+    XVal: "-100%",
   },
 ];
 

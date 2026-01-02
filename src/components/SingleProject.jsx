@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 const SingleProject = ({ ImgData, id, handleImgViewerShown }) => {
@@ -18,10 +19,7 @@ const SingleProject = ({ ImgData, id, handleImgViewerShown }) => {
     window.open(link);
   };
 
-  // const handleImgViewer =()=>{
-  //     setIsImgViewerShown(true)
-  //     console.log(ImgData.ProjectImgURl)
-  // }
+
   return (
     <div
       className="rounded-xl shadow-xl overflow-hidden transition-transform duration-200 ease-out cursor-pointer w-full bg-transparent "
@@ -37,12 +35,12 @@ const SingleProject = ({ ImgData, id, handleImgViewerShown }) => {
       >
         <div
           onClick={() => handleImgViewerShown(ImgData?.ProjectImgURl)}
-          className="rounded-xl w-full xsm:w-1/2 h-[45vh] overflow-hidden OuterProjectImgContainer"
+          className="rounded-xl w-full xsm:w-1/2 h-[60vh] overflow-hidden OuterProjectImgContainer"
         >
           <img
             loading="lazy"
-            className="w-full duration-200 cursor-[url('../../AboutMeImg.png')] overflow-hidden"
-            src={ImgData.ProjectImgURl}
+            className="duration-200 h-full bg-cover w-full overflow-hidden"
+            src={ImgData.ProjectmockUpImg ? ImgData.ProjectmockUpImg : ImgData.ProjectImgURl}
             alt=""
           />
         </div>
