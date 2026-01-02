@@ -1,8 +1,8 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import SingleProject from "../components/SingleProject";
 import { GrFormNextLink } from "react-icons/gr";
 import AllProjectsData from "../AllProjectsDetails";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -13,7 +13,7 @@ const MyProjectsSTN = () => {
   const [IsImgViewerShown, setIsImgViewerShown] = useState(false);
   const [ModelViewImgUri, setModelViewImgUri] = useState("");
 
-  const containerRef = useRef(null); // Ref for the container div
+  // Ref for the container div
   useGSAP(() => {
     gsap.from("#ProjectSectionHeading", {
       width: 0,
@@ -84,7 +84,7 @@ const MyProjectsSTN = () => {
       </div>
       {IsImgViewerShown && (
         <div
-          onClick={(e) => setIsImgViewerShown(false)}
+          onClick={() => setIsImgViewerShown(false)}
           className="handleImgViewerDiv fixed top-0 z-50 overflow-hidden py-10 bg-[#333]  h-screen w-[100vw] px-5 md:px-10 flex justify-center items-center"
         >
           <div
