@@ -11,7 +11,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LetStarted from "./Sections/LetStarted";
+import AnimatedList from "./components/SkillsList";
 
+import SkillsObj from "./Skills.js";
 
 gsap.registerPlugin(ScrollTrigger);
 const HomePage = () => {
@@ -84,8 +86,20 @@ const HomePage = () => {
           <AboutMeSTN />
         </div>
         <hr id="SkillsLine" className="HorinzontalLine" />
-        <div id="SkillDiv">
-          <SkillsSTN />
+        <div
+          id="SkillDiv"
+          className="w-full flex-col flex justify-center items-center "
+        >
+          <h1 className="w-full text-black dark:text-white text-center my-3 text-4xl">
+            Skills And Knowledge
+          </h1>
+          <AnimatedList
+            Skills={SkillsObj}
+            onItemSelect={(item, index) => alert(item.desc)}
+            showGradients={true}
+            enableArrowNavigation={true}
+            displayScrollbar={true}
+          />
         </div>
         <hr id="projects" className="HorinzontalLine" />
         <div id="ProjectsDiv">
