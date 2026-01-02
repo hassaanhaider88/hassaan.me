@@ -17,11 +17,12 @@ const AllProjectsData = [
     ProjectmockUpImg: GetURIMk,
     ProjectImgName: "Get URI",
     ProjectDesc:
-    "A developer-focused media hosting platform built for speed and simplicity. Abstracts file handling and delivery so teams can focus on building products instead of managing infrastructure.",
+      "A developer-focused media hosting platform built for speed and simplicity. Abstracts file handling and delivery so teams can focus on building products instead of managing infrastructure.",
     ProjectImgCreatedAt: "20 JUNE 2025",
     ProjectUrlRedirectTo: "https://www.geturi.online",
-    IconsDirection: "bottom-5 right-5",
-    FlexDirecton: "flex-row",
+    IconsDirection: "bottom-5 left-5",
+    FlexDirecton: "flex-row-reverse",
+
     XVal: "-200%",
   },
   {
@@ -33,11 +34,11 @@ const AllProjectsData = [
       "Designed and developed a secure backend architecture using Node.js, Express, and MongoDB. Implemented JWT-based authentication and authorization to ensure scalable and secure API access.",
     ProjectImgCreatedAt: "22 DEC 2025",
     ProjectUrlRedirectTo: "https://apexai-pk.netlify.app/",
-    IconsDirection: "bottom-5 left-5",
-    FlexDirecton: "flex-row-reverse",
+    IconsDirection: "bottom-5 right-5",
+    FlexDirecton: "flex-row",
     XVal: "200px",
   },
-  
+
   {
     id: "projectNumber02",
     ProjectImgURl: "../PersonaAEye.png",

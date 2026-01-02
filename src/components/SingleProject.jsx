@@ -10,8 +10,8 @@ const SingleProject = ({ ImgData, id, handleImgViewerShown }) => {
   const handleMove = (e) => {
     const { left, top, width, height } =
       e.currentTarget.getBoundingClientRect();
-    const x = (e.clientX - left) / width - 0.5;
-    const y = (e.clientY - top) / height - 0.5;
+    const x = (e.clientX - left) / width - 1;
+    const y = (e.clientY - top) / height - 1;
     setTilt({ x: y * -threshold, y: x * threshold });
   };
 
@@ -19,28 +19,29 @@ const SingleProject = ({ ImgData, id, handleImgViewerShown }) => {
     window.open(link);
   };
 
-
   return (
-    <div
-      className="rounded-xl shadow-xl overflow-hidden transition-transform duration-200 ease-out cursor-pointer w-full bg-transparent "
-      onMouseMove={handleMove}
-      onMouseLeave={() => setTilt({ x: 0, y: 0 })}
-      style={{
-        transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-      }}
-    >
+    <div className="rounded-xl overflow-hidden transition-transform duration-200 ease-out cursor-pointer w-full bg-transparent ">
       <div
         id={id}
         className={`xsm:flex block m-0 p-3 gap-5 justify-evenly ${ImgData.FlexDirecton} shadow-2xl rounded-xl `}
       >
         <div
           onClick={() => handleImgViewerShown(ImgData?.ProjectImgURl)}
-          className="rounded-xl w-full xsm:w-1/2 h-[60vh] overflow-hidden OuterProjectImgContainer"
+          className="rounded-xl w-full xsm:w-1/2 h-[60vh] scale-90  overflow-hidden OuterProjectImgContainer"
         >
           <img
+            onMouseMove={handleMove}
+            onMouseLeave={() => setTilt({ x: 0, y: 0 })}
+            style={{
+              transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+            }}
             loading="lazy"
-            className="duration-200 h-full bg-cover w-full overflow-hidden"
-            src={ImgData.ProjectmockUpImg ? ImgData.ProjectmockUpImg : ImgData.ProjectImgURl}
+            className="duration-200  h-full bg-cover w-full overflow-hidden"
+            src={
+              ImgData.ProjectmockUpImg
+                ? ImgData.ProjectmockUpImg
+                : ImgData.ProjectImgURl
+            }
             alt=""
           />
         </div>
