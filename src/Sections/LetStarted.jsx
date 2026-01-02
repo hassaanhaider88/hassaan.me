@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
+import Appointment from '../assets/Appointment.png'
 
 const LetStarted = () => {
   return (
@@ -27,7 +28,7 @@ const LetStarted = () => {
         </button>
       </div>
       <img
-        src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/hero-section-showcase-2.png"
+        src={Appointment}
         className="w-full rounded-[15px] max-w-4xl mt-16"
         alt="hero section showcase"
       />
