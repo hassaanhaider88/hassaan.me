@@ -1,4 +1,5 @@
-import React, { createContext, useState, useEffect } from 'react';
+/* eslint-disable react/prop-types */
+import  { createContext, useState, useEffect } from 'react';
 
 
 const DarkModeContext = createContext();
