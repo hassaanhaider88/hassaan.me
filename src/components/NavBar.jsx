@@ -99,7 +99,6 @@ const NavBar = ({ Projectpage }) => {
   };
 
   const handleMenuIconOpenOrClose = () => {
-    console.log(IsMenuOpen);
     setIsMenuOpen(!IsMenuOpen);
   };
 
