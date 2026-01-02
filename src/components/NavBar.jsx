@@ -113,9 +113,9 @@ const NavBar = ({ Projectpage }) => {
         ref={NavBar}
         className="top-5  mx-5 w-[95vw]  z-40 fixed flex justify-between items-center drop-shadow-2xl bg-[#ffffffaf] dark:bg-[#000000ab] shadow-[#666363dc] px-5 py-3 rounded-3xl text-black dark:text-white  cursor-pointer overflow-hidden Inter_Font tInter_Fon"
       >
-        {/* Left side bar Contianer */}
+
         <div className="relative flex justify-between items-center md:gap-5 md2:gap-12 px-2 w-[50%]">
-          {/* User Name Logo Type will be here */}
+
           <div ref={logo} className="flex  w-full justify-center items-center text-4xl LogoUserName">
             <TrueFocus
               sentence="H M K"
@@ -126,8 +126,7 @@ const NavBar = ({ Projectpage }) => {
               pauseBetweenAnimations={1}
             />
           </div>
-          {/* NavBar Link goes here */}
-          {/* NavBar Links */}
+       
           {["Home", "About me", "Projects", "Contact me"].map((item, idx) => (
             <h1
               key={idx}

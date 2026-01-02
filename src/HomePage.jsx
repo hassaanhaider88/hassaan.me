@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import HeroSection from "./Sections/HeroSTN";
 import AboutMeSTN from "./Sections/AboutMeSTN";
-import SkillsSTN from "./Sections/SkillsSTN";
 import MyProjectsSTN from "./Sections/MyProjectsSTN";
 import ContactUs from "./Sections/ContactUs";
 import FollowMe from "./Sections/FollowMe";
