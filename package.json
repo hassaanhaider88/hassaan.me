@@ -14,6 +14,7 @@
     "@gsap/react": "^2.1.1",
     "@hmk_codeweb88/useglobalstate": "^1.0.3",
     "dayjs": "^1.11.19",
+    "framer-motion": "^12.23.26",
     "gsap": "^3.12.5",
     "lenis": "^1.1.16",
     "lucide-react": "^0.562.0",
