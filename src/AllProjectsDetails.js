@@ -8,7 +8,8 @@ import DevTraceMk from "./assets/DevTraceMk.png";
 import ECommerceWebMk from "./assets/EcommerceMk.png";
 import BloggingSiteMk from "./assets/BloggingSiteMk.png";
 import CurrentPortfolioMk from "./assets/PersonalPortfolioMk.png";
-import AnimationalPorfolioMk from "./assets/AnimatedPortfolioMk.png";
+// import AnimationalPorfolioMk from "./assets/AnimatedPortfolioMk.png";
+// import AnimationalPorfolioMk from "./assets/AnimatedPortfolioMk.png";
 
 const AllProjectsData = [
   {
@@ -112,7 +113,7 @@ const AllProjectsData = [
   {
     id: "projectNumber07",
     ProjectImgURl: "../AnimationalPorfolio.jpeg",
-    ProjectmockUpImg: AnimationalPorfolioMk,
+    ProjectmockUpImg: '',
     ProjectImgName: "Animated Portfolio",
     ProjectDesc:
       "A visually rich personal portfolio created using HTML, Tailwind CSS, jQuery, and GSAP, focusing on smooth animations and interactive transitions.",
