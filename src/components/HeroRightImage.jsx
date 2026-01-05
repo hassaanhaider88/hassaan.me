@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DownloadCV from "./Download_CV";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import HHCV from "../assets/HHCV.pdf";
+
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
 const HeroRightImage = () => {
@@ -9,7 +9,7 @@ const HeroRightImage = () => {
 
   const handleCVDownloader = () => {
     let a = document.createElement("a");
-    a.href = "../../MyCV.jpeg";
+    a.href = HHCV;
     a.download = "Hassaan_Haider_CV.pdf";
     document.body.appendChild(a);
     a.click();

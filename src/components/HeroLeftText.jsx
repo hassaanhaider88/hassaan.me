@@ -34,13 +34,6 @@ const HeroLeftText = () => {
         <FuzzyText baseIntensity={0.13} hoverIntensity={0.22}>
           Haider .Dev
         </FuzzyText>
-        {/* <h1
-          id="NameHeading"
-          className="relative my-5 text-7xl text-black dark:text-white"
-        >
-          Hassaan <br /> Haider{" "}
-          <span className="text-[#d217b7] ml-3 line">.</span>Dev
-        </h1> */}
         <p
           id="AboutLine"
           className="text-[rgb(104,86,86)] md:ml-10 md-0 dark:text-[#ffffffb4]"
