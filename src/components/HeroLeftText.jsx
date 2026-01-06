@@ -12,9 +12,9 @@ const HeroLeftText = () => {
     >
       <div
         id="TypingText"
-        className="block -bottom-[17%] md2:-bottom-[40%] left-[70%] md2:left-[12%] absolute w-full h-full -translate-x-1/2 md2:translate-x-0"
+        className="px-6 flex flex-col justify-start items-start  -bottom-[17%] md2:-bottom-[40%] left-[70%] md2:left-[12%] absolute w-full h-full -translate-x-1/2 md2:translate-x-0"
       >
-        <h1 className="xsm:block bottom-[55%] sm:bottom-0 left-[7%] sm:left-0 sm:static absolute hidden w-[545px] sm:rotate-0 text-[rgb(104,86,86)] text-nowrap text-xl sm2:text-5xl sm:text-5xl xsm:text-2xl md2:text-7xl md-0 md:ml-10 dark:text-[#ffffff60] uppercase open-sans rotate-90">
+        <h1 className="">
           {/* <TypingAnimation /> */}
           <TextType
             text={[
@@ -28,15 +28,21 @@ const HeroLeftText = () => {
             cursorCharacter="|"
           />
         </h1>
-        <FuzzyText baseIntensity={0.13} hoverIntensity={0.22}>
-          Hassaan
-        </FuzzyText>
-        <FuzzyText baseIntensity={0.13} hoverIntensity={0.22}>
-          Haider .Dev
-        </FuzzyText>
+        <div className="w-full flex flex-col justify-start items-start">
+          <FuzzyText baseIntensity={0.13} hoverIntensity={0.22}>
+            Hassaan
+          </FuzzyText>
+          <FuzzyText
+            className="my-2 md:scale-105 scale-75 md:-mx-14 -mx-[110px] text-white dark:text-black"
+            baseIntensity={0.13}
+            hoverIntensity={0.22}
+          >
+            Haider .Dev
+          </FuzzyText>
+        </div>
         <p
           id="AboutLine"
-          className="text-[rgb(104,86,86)] md:ml-10 md-0 dark:text-[#ffffffb4]"
+          className="text-[rgb(104,86,86)]  dark:text-[#ffffffb4]"
         >
           I'm Full Stack developer in React , <br /> Express , MongoDB, Node{" "}
           <FaReact className="inline text-blue-500" /> and Next Js{" "}

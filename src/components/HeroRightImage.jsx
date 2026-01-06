@@ -26,16 +26,18 @@ const HeroRightImage = () => {
         >
           <div
             id="PersonalImgContainer"
-            className="absolute flex justify-center items-center bg-gradient-to-r from-[#797979] dark:from-[#0ca2da] via-[#cbb9e9] to-[#ffffff] dark:to-[#f34ae4] rounded-full w-[200px] xsm:w-[400px] h-[200px] xsm:h-[400px] BigCirleImageContainer circle-pattern overfl"
+            className="absolute flex overflow-hidden justify-center items-center bg-gradient-to-r from-[#797979] dark:from-[#0ca2da] via-[#cbb9e9] to-[#ffffff] dark:to-[#f34ae4] rounded-full w-[200px] xsm:w-[400px] h-[200px] xsm:h-[400px] BigCirleImageContainer circle-pattern overfl"
           >
-            <img
-              id="PersonalImg"
-              src="../../Hassaan88.png"
-              height={490}
-              className=" z-10 absolute"
-              width={400}
-              alt=""
-            />
+            <div className="rounded-full z-40 w-full h-full overflow-hidden">
+              <img
+                id="PersonalImg"
+                src="../../Hassaan88.png"
+                className="z-10 bg-cover absolute"
+                alt="HMK Hassaan"
+                width={"100%"}
+                height={"100%"}
+              />
+            </div>
           </div>
         </div>
       </div>

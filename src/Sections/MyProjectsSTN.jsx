@@ -27,21 +27,6 @@ const MyProjectsSTN = () => {
       },
     });
 
-    // AllProjectsData.slice(0, 4).forEach((project) => {
-    //   gsap.from(`#${project.id}`, {
-    //     x: project.XVal,
-    //     opacity: 0,
-    //     duration: 0.8,
-    //     scrollTrigger: {
-    //       trigger: `#${project.id}`,
-    //       start: "top 80%",
-    //       end: "bttom 20%",
-    //       toggleActions: "play none none reverse",
-    //       scrub: true,
-    //       // markers :true
-    //     },
-    //   });
-    // });
   }, []);
   const handleImgViewerShown = (ImgUri) => {
     setIsImgViewerShown(true);
@@ -92,6 +77,7 @@ const MyProjectsSTN = () => {
             className="h-full rounded-t-[30px] w-full overflow-y-auto overflow-x-hidden "
           >
             <img
+            
               src={`../${ModelViewImgUri}`}
               alt={ModelViewImgUri}
               className="w-full bg-cover"

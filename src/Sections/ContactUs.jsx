@@ -30,7 +30,7 @@ const ContactUs = () => {
   return (
     <div
       id="contact"
-      className={`relative overflow-x-hidden min-h-screen flex flex-col items-center w-full text-black dark:text-white`}
+      className={`relative overflow-x-hidden h-screen sm:h-[50vh] flex flex-col items-center w-full text-black dark:text-white`}
     >
       <h1
         id="ContectSectionHeading"
@@ -38,7 +38,7 @@ const ContactUs = () => {
       >
         Contact me
       </h1>
-      <div className="py-4 w-[250px] xsm:w-[400px] FormContainer">
+      <div className="py-4 sm:w-[250px] w-full px-5 FormContainer">
         <ElectricBorder
           cardProps={{
             color: "#ff80f4",
@@ -47,10 +47,7 @@ const ContactUs = () => {
             borderRadius: 16,
           }}
         >
-          <form
-            className="py-5 px-8 rounded-3xl"
-            onSubmit={handleContactForm}
-          >
+          <form className="py-5 px-8 rounded-3xl" onSubmit={handleContactForm}>
             <div className="Input">
               <label className="block font-semibold" htmlFor="Name">
                 Name

@@ -112,10 +112,11 @@ const NavBar = ({ Projectpage }) => {
         ref={NavBar}
         className="top-5  mx-5 w-[95vw]  z-40 fixed flex justify-between items-center drop-shadow-2xl bg-[#ffffffaf] dark:bg-[#000000ab] shadow-[#666363dc] px-5 py-3 rounded-3xl text-black dark:text-white  cursor-pointer overflow-hidden Inter_Font tInter_Fon"
       >
-
         <div className="relative flex justify-between items-center md:gap-5 md2:gap-12 px-2 w-[50%]">
-
-          <div ref={logo} className="flex  w-full justify-center items-center text-4xl LogoUserName">
+          <div
+            ref={logo}
+            className="flex  w-full justify-center items-center text-4xl LogoUserName"
+          >
             <TrueFocus
               sentence="H M K"
               manualMode={false}
@@ -125,7 +126,7 @@ const NavBar = ({ Projectpage }) => {
               pauseBetweenAnimations={1}
             />
           </div>
-       
+
           {["Home", "About me", "Projects", "Contact me"].map((item, idx) => (
             <h1
               key={idx}
@@ -144,18 +145,6 @@ const NavBar = ({ Projectpage }) => {
           ref={toggleTheme}
           className="sm2:flex justify-end items-center gap-3 md2:gap-8 hidden w-[40%]"
         >
-          {/* <div className="flex justify-center items-center gap-2 toggleButtonDayAndNight">
-            <span>Light</span>
-            <label className="switch">
-              <input
-                type="checkbox"
-                checked={isChecked}
-                onChange={handleToggleTheme}
-              />
-              <span className="slider"></span>
-            </label>
-            <span>Dark</span>
-          </div> */}
           <label className="container">
             <input
               onChange={handleToggleTheme}
@@ -232,10 +221,37 @@ const NavBar = ({ Projectpage }) => {
           </h1>
         </div>
         <div>
-          <div className="flex flex-col justify-start items-start gap-2 mt-2">
+          <div
+            ref={toggleTheme}
+            className="flex justify-end items-center gap-3 md2:gap-8  w-[40%]"
+          >
+            <label className="container">
+              <input
+                onChange={handleToggleTheme}
+                type="checkbox"
+                checked={isChecked}
+              />
+              <div className="checkmark">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Theme</title>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="32"
+                    d="M416 128L192 384l-96-96"
+                  ></path>
+                </svg>
+              </div>
+            </label>
             <div
               onClick={handleWhatsAppUrl}
-              className="bg-[#320a58e7] hover:bg-[#7c4ca8d0] mb-2 px-6 py-2 rounded-full w-fit text-white hover:scale-105 transition duration-300 ContactUsBtn"
+              className="bg-[#320a58e7] hover:bg-[#575558d0] px-6 py-2 rounded-full text-green-500 text-lg hover:scale-105 transition duration-300 ContactUsBtn"
             >
               <IoLogoWhatsapp />
             </div>

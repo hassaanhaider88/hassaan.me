@@ -89,7 +89,7 @@ const HomePage = () => {
           id="SkillDiv"
           className="w-full flex-col flex justify-center items-center "
         >
-          <h1 className="w-full text-black dark:text-white text-center my-3 text-4xl">
+          <h1 className="w-full text-black dark:text-white text-center my-3  text-4xl">
             Skills And Knowledge
           </h1>
           <AnimatedList

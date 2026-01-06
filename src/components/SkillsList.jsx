@@ -119,7 +119,7 @@ const AnimatedList = ({
   }, [selectedIndex, keyboardNav]);
 
   return (
-    <div className={`relative bg-transparent w-[500px] ${className}`}>
+    <div className={`relative bg-transparent md:w-[500px] w-[400px] ${className}`}>
       <div
         ref={listRef}
         className={`max-h-[900px] overflow-y-auto p-4 ${

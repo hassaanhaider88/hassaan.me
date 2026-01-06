@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBar from './components/NavBar'
 import AllProjectsData from './AllProjectsDetails'
 import SingleProject from './components/SingleProject'
