@@ -34,7 +34,7 @@ const ContactUs = () => {
     >
       <h1
         id="ContectSectionHeading"
-        className="py-2 min-h-screen h-fit font-semibold text-3xl text-center text-nowrap xsm:text-6xl overflow-hidden"
+        className="py-2 h-fit font-semibold text-3xl text-center text-nowrap xsm:text-6xl overflow-hidden"
       >
         Contact me
       </h1>
