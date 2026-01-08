@@ -8,10 +8,24 @@ import DevTraceMk from "./assets/DevTraceMk.png";
 import ECommerceWebMk from "./assets/EcommerceMk.png";
 import BloggingSiteMk from "./assets/BloggingSiteMk.png";
 import CurrentPortfolioMk from "./assets/PersonalPortfolioMk.png";
+import PeerCallMk from './assets/PeerCallMk.png'
 // import AnimationalPorfolioMk from "./assets/AnimatedPortfolioMk.png";
 // import AnimationalPorfolioMk from "./assets/AnimatedPortfolioMk.png";
 
 const AllProjectsData = [
+  {
+    id: "projectNumber10",
+    ProjectImgURl: "../PeerCall.png",
+    ProjectmockUpImg: PeerCallMk,
+    ProjectImgName: "PeerCall",
+    ProjectDesc:
+      "Contribute to  A real-time video conferencing app built with WebRTC and Socket.io, enabling peer-to-peer video calls with a focus on low latency and high-quality streaming. as Front End Developer.",
+    ProjectImgCreatedAt: "8 JAN 2026",
+    ProjectUrlRedirectTo: "https://github.com/apna-college/Zoom",
+    IconsDirection: "bottom-5 right-5",
+    FlexDirecton: "flex-row",
+    XVal: "200px",
+  },
   {
     id: "projectNumber00",
     ProjectImgURl: "../GetURI.png",

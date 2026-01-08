@@ -30,15 +30,15 @@ const ContactUs = () => {
   return (
     <div
       id="contact"
-      className={`relative overflow-x-hidden h-screen sm:h-[50vh] flex flex-col items-center w-full text-black dark:text-white`}
+      className={`relative overflow-x-hidden  sm:h-screen h-[70vh] flex flex-col items-center w-full text-black dark:text-white`}
     >
       <h1
         id="ContectSectionHeading"
-        className="py-2 w-fit h-fit font-semibold text-3xl text-center text-nowrap xsm:text-6xl overflow-hidden"
+        className="py-2 min-h-screen h-fit font-semibold text-3xl text-center text-nowrap xsm:text-6xl overflow-hidden"
       >
         Contact me
       </h1>
-      <div className="py-4 sm:w-[250px] w-full px-5 FormContainer">
+      <div className="py-4 sm:w-[450px] w-full px-5 FormContainer">
         <ElectricBorder
           cardProps={{
             color: "#ff80f4",
